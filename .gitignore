@@ -1,0 +1,52 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage*
+.tox/
+
+# Virtual environments / environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.idea/
+*.vscode/
+
+# Logs
+logs/
+
+# Data cache
+**/tmp/
+**/.tmp/
+
+# Model artifacts
+*.onnx
+*.pt
+*.pth
+*.joblib
+*.pickle
+*.pkl
+
+# CSV large intermediate logs
+*debug_dump_*.csv
