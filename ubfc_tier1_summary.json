@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-11-14T00:33:52.923861",
+  "n_rows": 68,
+  "n_subjects": 23,
+  "multi_class_model": false,
+  "classes_observed": [
+    0,
+    1
+  ],
+  "strategy1": {
+    "description": "Map class 2 (amusement) to baseline (0)",
+    "accuracy": 0.7205882352941176,
+    "f1_macro": 0.5344144144144144
+  },
+  "strategy2": {
+    "description": "Binary collapse: stress = class >=1",
+    "accuracy": 0.7205882352941176,
+    "f1_macro": 0.5344144144144144
+  },
+  "confusion_matrix_raw": [
+    [
+      3,
+      19
+    ],
+    [
+      0,
+      46
+    ]
+  ],
+  "class_mapping_binary": {
+    "0": "baseline",
+    "1": "stress"
+  }
+}

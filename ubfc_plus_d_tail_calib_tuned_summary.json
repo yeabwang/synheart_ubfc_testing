@@ -1,0 +1,48 @@
+{
+  "variant": "D_tail_calib_tuned",
+  "threshold_default": 0.5,
+  "threshold_tuned": 0.5,
+  "default": {
+    "accuracy": 0.4444444444444444,
+    "f1_macro": 0.41137143189349457,
+    "cm": [
+      [
+        46,
+        0
+      ],
+      [
+        75,
+        14
+      ]
+    ],
+    "n": 135
+  },
+  "tuned": {
+    "accuracy": 0.4444444444444444,
+    "f1_macro": 0.41137143189349457,
+    "cm": [
+      [
+        46,
+        0
+      ],
+      [
+        75,
+        14
+      ]
+    ],
+    "n": 135
+  },
+  "qc": {
+    "min_rr_ms": 350,
+    "max_rr_ms": 2000,
+    "mad_k": 3.0,
+    "min_rr_count": 80
+  },
+  "windowing": {
+    "mode": "allow_tail",
+    "min_fraction": 0.9,
+    "window_size_sec": 120,
+    "step_size_sec": 60
+  },
+  "calibrated": true
+}
