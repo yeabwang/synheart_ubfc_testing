@@ -1,0 +1,64 @@
+{
+  "CORE_HRV_Emotion_Features": [
+    {
+      "name": "HRV_SDNN",
+      "why_included": "Captures total HRV across the full window. Reflects combined sympathetic+parasympathetic activity.",
+      "importance_in_emotion_detection": "Detects general arousal level; drops significantly in stress, fear, high cognitive load.",
+      "strength": "High"
+    },
+    {
+      "name": "HRV_RMSSD",
+      "why_included": "Direct marker of vagal (parasympathetic) activity. Captures fast beat-to-beat variation.",
+      "importance_in_emotion_detection": "Strongly correlates with relaxation vs stress. Reliable indicator of calmness and positive valence.",
+      "strength": "Very High"
+    },
+    {
+      "name": "HRV_pNN50",
+      "why_included": "Measures proportion of large RR differences. Another vagal activity marker.",
+      "importance_in_emotion_detection": "Good discriminator between relaxed/positive states vs stress/anxiety.",
+      "strength": "Medium–High"
+    },
+    {
+      "name": "HRV_MeanNN",
+      "why_included": "Average RR interval. Inversely tied to mean heart rate.",
+      "importance_in_emotion_detection": "Tracks baseline activation (sympathetic vs parasympathetic). Stress → shorter RR.",
+      "strength": "Medium"
+    },
+    {
+      "name": "HRV_HF",
+      "why_included": "Parasympathetic spectral power.",
+      "importance_in_emotion_detection": "Very sensitive to calmness, comfort, social engagement, positive affect.",
+      "strength": "Very High"
+    },
+    {
+      "name": "HRV_LF",
+      "why_included": "Reflects mixed sympathetic–parasympathetic dynamics; captures slower oscillations.",
+      "importance_in_emotion_detection": "Useful for detecting arousal and sustained cognitive/emotional load.",
+      "strength": "Medium"
+    },
+    {
+      "name": "HRV_LFHF",
+      "why_included": "Balance index between sympathetic and parasympathetic activity.",
+      "importance_in_emotion_detection": "One of the strongest stress/arousal markers; reliably increases during anger, fear, anxiety.",
+      "strength": "High"
+    },
+    {
+      "name": "HRV_TP",
+      "why_included": "Total spectral power across all bands.",
+      "importance_in_emotion_detection": "General indicator of autonomic flexibility; lower TP → emotional suppression, high stress.",
+      "strength": "Medium–High"
+    },
+    {
+      "name": "HRV_SampEn",
+      "why_included": "Measures signal irregularity/complexity.",
+      "importance_in_emotion_detection": "Drops sharply during stress, anxiety, and high arousal. Strong marker of emotional dysregulation.",
+      "strength": "High"
+    },
+    {
+      "name": "HRV_ApEn",
+      "why_included": "Older but complementary complexity measure to SampEn.",
+      "importance_in_emotion_detection": "Useful for identifying transitions between emotional states; complexity falls during stress.",
+      "strength": "Medium–High"
+    }
+  ]
+}
